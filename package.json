@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 3001",
+    "dev": "nuxt dev --port 60900",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -30,6 +30,7 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "axios": "^1.6.2",
     "bcryptjs": "^2.4.3",
+    "element-plus": "^2.7.3",
     "nuxt-icon": "^0.6.10",
     "nuxt-proxy": "^0.0.8"
   },

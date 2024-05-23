@@ -166,7 +166,6 @@ onMounted(() => {
 <template>
   <div class="dark:bg-gray-400">
     <search-header :keyword="keyword" @search="search"></search-header>
-
     <div class="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_400px] gap-8">
       <div class="flex flex-col gap-3 sm:mt-3 sm:pb-[60px] p-[20px] md:p-0">
         <div class="py-3">
@@ -204,7 +203,12 @@ onMounted(() => {
             </li>
           </ul>
         </div>
-
+        <div class="bg-red dark:bg-gray-600 shadow p-[14px] rounded-[6px] cursor-pointer mb-3
+                hover:bg-[#f5f5f5] hover:shadow-lg transition duration-300 ease-in-out">
+           <a target="_blank" :href="'https://tv.3any.ai/index.php/vod/search.html?wd='+keyword" class="el-check-tag text-success bg-green hover:bg-green-300 text-[24px] md:text-[24px] p-8 rounded">
+            <span style="color: red;">点击在线观看{{ keyword }}</span>
+          </a> 
+        </div>
         <disk-info-list :sources="sources" :skeleton-loading="skeletonLoading"
                         @open-link="handleOpenSourceLink">
         </disk-info-list>
@@ -244,6 +248,7 @@ onMounted(() => {
                     <el-skeleton-item variant="text" style="width: 100px;"/>
                   </div>
                 </div>
+                
               </template>
               <template #default>
                 <div
@@ -263,6 +268,12 @@ onMounted(() => {
                     <span class="text-[14px] font-inter break-words truncate dark:text-slate-200">{{
                         item.disk_name
                       }}</span>
+                  </div>
+                  <div class="bg-red dark:bg-gray-600 shadow p-[14px] rounded-[6px] cursor-pointer mb-3
+                        hover:bg-[#f5f5f5] hover:shadow-lg transition duration-300 ease-in-out">
+                    <a :href="'https://tv.3any.ai/index.php/vod/search.html?wd='+item.disk_name" class="el-check-tag text-success bg-green hover:bg-green-300 text-[24px] md:text-[24px] p-8 rounded" target="_blank">
+                      <span>点击在线观看{{ item.disk_name }}</span>
+                    </a> 
                   </div>
                 </div>
               </template>

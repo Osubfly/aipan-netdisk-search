@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     app: {
         // head
         head: {
-            title: '爱盼-网盘资源搜索',
+            title: '小兔-网盘资源搜索',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
             script: [
                 {
-                    src: 'https://www.googletagmanager.com/gtag/js?id=G-7X3KPN3R02',
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-ZJ20EM1NWL',
                     async: true
                 },
                 {
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
                     src: 'https://challenges.cloudflare.com/turnstile/v0/api.js'
                 },
                 {
-                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8210373406341452',
+                    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8936138113431331',
                     async: true,
                     crossorigin: 'anonymous'
                 }

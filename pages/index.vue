@@ -48,7 +48,7 @@ onMounted(() => {
     </div>
     <div class="flex flex-row items-center justify-center gap-3 mt-[80px]">
       <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="@/assets/my-logo.png" alt="logo">
-      <h1 class="text-[18px] sm:text-[24px] font-serif font-bold dark:text-white ">爱盼-网盘资源搜索</h1>
+      <h1 class="text-[18px] sm:text-[24px] font-serif font-bold dark:text-white ">小兔-网盘资源搜索</h1>
     </div>
 
     <div class="max-w-[1240px] mx-auto mt-[20px]">
@@ -104,8 +104,10 @@ onMounted(() => {
         <a class="" href="https://github.com/unilei/aipan-netdisk-search">
           <img class="w-[30px] h-[30px]" src="@/assets/skill-icons--github-dark.svg" alt="github">
         </a>
-        <el-button link color="#ffffff" @click="donate()">
-          <img  class="w-[30px] h-[30px]" src="@/assets/donation/dashang.svg" alt="打赏">
+        <el-button link color="#ffffff">
+          <a class="" href="https://tv.3any.ai">
+            <img  class="w-[30px] h-[30px]" src="@/assets/donation/dashang.svg" alt="打赏">
+          </a>
         </el-button>
       </div>
       <p class="text-center text-[8px] sm:text-[12px] text-slate-400">
